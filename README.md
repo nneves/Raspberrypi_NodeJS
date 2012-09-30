@@ -7,18 +7,23 @@ Instructions to compile Node.js on a Raspberry Pi (Embedded ARM board running Li
 Compile Node.js v0.8.10 on a RaspberryPi with Linux Debian armhf (hardware floating point) wheezy (raspbian)
 ===========================================================================================================
 Note: no more V8 code patching required!
+Source: https://gist.github.com/3245130#gistcomment-399244
 
 distro: 2012-09-18-wheezy-raspbian.zip
 
 Install the necessary dependecies:
 ```bash
-sudo apt-get install git-core build-essential libssl-dev
+sudo apt-get install build-essential libssl-dev
 ```
 
 Get Node.js source:
 ```bash
-git clone -b v0.8.10 git://github.com/joyent/node.git
-cd node
+
+export NODE_VER=0.8.10
+
+curl http://nodejs.org/dist/v$NODE_VER/node-v$NODE_VER.tar.gz | tar xz
+
+cd node-v$NODE_VER
 ```
 
 Configure and make (disable snapshot):

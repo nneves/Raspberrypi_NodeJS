@@ -1,8 +1,18 @@
 Raspberrypi NodeJS
+==================
+
+Pre-Compiled binaries of node.js for Raspberry Pi  (Embedded ARM board running Linux Debian)
 ------------------
 
-Instructions to compile Node.js on a Raspberry Pi (Embedded ARM board running Linux Debian)
+https://gist.github.com/3245130
 
+
+
+
+
+
+Instructions to compile Node.js on a Raspberry Pi (Embedded ARM board running Linux Debian)
+------------------
 
 Compile Node.js v0.8.10 on a RaspberryPi with Linux Debian armhf (hardware floating point) wheezy (raspbian)
 ===========================================================================================================
